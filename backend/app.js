@@ -12,7 +12,7 @@ app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 const customerRoutes = require("./routes/customerRoutes");
 app.use("/api/customer", customerRoutes);
 
-mongoose.connect("mongodb://localhost:27017/test-higo")
+mongoose.connect("mongodb+srv://nicholasaristiantodev:mongodb@cluster0.pbbgt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
   .then(() => {
     console.log("✅ Connected to MongoDB");
     mongoose.connection.db.listCollections().toArray((err, names) => {
