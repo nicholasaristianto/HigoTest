@@ -25,7 +25,16 @@ export default function DigitalInterestChart() {
     labels: data.labels,
     datasets: [{
       data: data.counts,
-      backgroundColor: ["#6366F1", "#F59E0B", "#10B981", "#EF4444", "#3B82F6"],
+      backgroundColor: [
+        "#6366F1", 
+        "#F59E0B", 
+        "#10B981", 
+        "#EF4444", 
+        "#3B82F6", 
+        "#FF9F40", 
+        "#8B5CF6", 
+        "#22D3EE", 
+      ],
       borderWidth: 0,
       hoverOffset: 8,
     }],
