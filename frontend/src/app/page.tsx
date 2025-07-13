@@ -36,7 +36,7 @@ export default function Home() {
   const fetchData = async () => {
     setLoading(true);
     const skip = page * limit;
-    const res = await axios.get(`http://localhost:5000/api/customer/all?limit=${limit}&skip=${skip}`);
+    const res = await axios.get(`https://higotest-production.up.railway.app/api/customer/all?limit=${limit}&skip=${skip}`);
     setData(res.data.data);
     setTotal(res.data.total);
     setLoading(false);

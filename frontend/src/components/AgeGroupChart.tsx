@@ -10,7 +10,7 @@ export default function AgeGroupChart() {
   const [ageData, setAgeData] = useState<{ range: string; count: number }[]>([]);
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/customer/age-summary").then((res) => {
+    axios.get("https://higotest-production.up.railway.app/api/customer/age-summary").then((res) => {
       setAgeData(res.data);
     });
   }, []);

@@ -11,7 +11,7 @@ export default function CustomerLocationChart() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/customer/location-summary");
+      const res = await axios.get("https://higotest-production.up.railway.app/api/customer/location-summary");
       const data = res.data;
       setLocationData({
         labels: Object.keys(data),

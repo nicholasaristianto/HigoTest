@@ -13,7 +13,7 @@ export default function DigitalInterestChart() {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/customer/digital-interest-summary").then((res) => {
+    axios.get("https://higotest-production.up.railway.app/api/customer/digital-interest-summary").then((res) => {
       setData({
         labels: res.data.map((d: any) => d._id),
         counts: res.data.map((d: any) => d.count),

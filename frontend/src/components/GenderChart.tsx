@@ -13,7 +13,7 @@ export default function GenderChart() {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/customer/summary").then((res) => {
+    axios.get("https://higotest-production.up.railway.app/api/customer/summary").then((res) => {
       const genderData = res.data.genderCount || [];
       setData({
         labels: genderData.map((d: any) => d._id),

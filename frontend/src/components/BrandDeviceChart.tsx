@@ -13,7 +13,7 @@ export default function BrandDeviceChart() {
   });
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/customer/brand-device-summary").then((res) => {
+    axios.get("https://higotest-production.up.railway.app/api/customer/brand-device-summary").then((res) => {
       setData({
         labels: res.data.map((b: any) => b._id),
         counts: res.data.map((b: any) => b.count),

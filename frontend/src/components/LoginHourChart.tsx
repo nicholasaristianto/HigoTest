@@ -22,7 +22,7 @@ export default function LoginHourChart() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/api/customer/login-hour-summary");
+        const res = await axios.get("https://higotest-production.up.railway.app/api/customer/login-hour-summary");
         const labels = res.data.map((item: any) => item._id);
         const counts = res.data.map((item: any) => item.count);
 
